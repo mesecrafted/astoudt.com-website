@@ -23,6 +23,11 @@ h1.navbar-title {
     cursor: pointer;
 }
 
+a.navbar-title {
+    color: white;
+    text-decoration: none;
+}
+
 ul.site-navigation {
     margin: 0;
     padding: 0;
@@ -45,6 +50,11 @@ li.site-navigation:hover {
     background-color: #061c79;
 }
 
+a.site-navigation {
+    color: white;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 600px) {
     header {
         position: static;
@@ -55,6 +65,33 @@ li.site-navigation:hover {
     }
 }
 
-img.cover {
+section.cover {
+    display: flex;
+    top: 0;
     width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(Cover.jpg);
+    z-index: -1;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media only screen and (max-height: 500px) {
+    section.cover {
+        height: 500px;
+    }
+}
+
+h2.cover {
+    margin: 0;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #065579d0;
+    transition: all 0.2s ease;
+}
+
+h2.cover:hover {
+    background-color: #061c79;
 }
