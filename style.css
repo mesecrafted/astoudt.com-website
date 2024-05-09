@@ -21,9 +21,6 @@ h1.navbar-title {
     cursor: pointer;
 }
 
-nav.site-navigation {
-}
-
 ul.site-navigation {
     margin: 0;
     padding: 0;
@@ -45,3 +42,12 @@ li.site-navigation {
 li.site-navigation:hover {
     background-color: #061c79;
 }
+@media only screen and (max-width: 600px) {
+    header {
+        display: block;
+    }
+    ul.site-navigation {
+        flex-direction: column;
+    }
+}
+
