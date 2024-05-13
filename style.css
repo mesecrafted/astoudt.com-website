@@ -24,6 +24,7 @@ a {
 header {
     position: sticky;
     top: 0; 
+    padding: 10px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +53,6 @@ li.site-navigation {
     font-size: large;
     font-weight: 600;
     transition: all 0.2s ease;
-    cursor: pointer;
 }
 
 li.site-navigation:hover {
